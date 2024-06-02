@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 2px;
+  margin: 1rem auto;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100vw;
+}
+nav .nav-items{
+  display: flex;
+  justify-content: space-between;
+}
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav .nav-items a {
+  margin: 0 0.5rem;
+  color:  rgba(255, 255, 255, 0.7);
+}
+nav .nav-items a:hover{
+  color: white;
+}
+.hiuser,#hi1,#hi2{
+  display: block;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right:10px ;
+}
+#hi1>img,#hi2>img{
+  width:24px;
+   height:24px;
+   padding:0px;
+   margin-left:5px;
+   display:block;
+   border-radius:50%; 
+  border:1.5px solid white;  
+  object-fit:cover;
+}
+#hi1{
+  display: none;
+}
+#nav-combine{
+  display: flex;
+   justify-content: space-between; 
+   align-items: center;
+}
+#shopPage{
+  color: white !important;
+}
+main {
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+
+main aside {
+  flex: 1;
+  background-color: black;
+  color: white;
+  height: 500vh;
+  position: absolute;
+  padding-top: 1rem;
+  width: 9rem;
+}
+main aside section #clearfilters{
+  background-color: gray;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  width:60%;
+}
+#clearfilters:hover{
+  box-shadow: 0px 0px 7px 0px gray; 
+ 
+}
+main main-content {
+  display: block;
+  margin-left: 10rem;
+  width: calc(100% - 10rem);
+}
+
+aside section {
+  padding: 1rem;
+  border-bottom: 1px solid white;
+}
+
+aside section:last-child {
+  border-bottom: none;
+}
+
+aside section title {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+aside section li {
+  margin-bottom: 0.75rem;
+}
+
+aside section label {
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+main-content {
+  padding: 1rem;
+  position: relative;
+  height: auto;
+
+}
+
+main-content input {
+  padding: 1rem;
+  width: 97%;
+  position: relative;
+  font-size: 1rem;
+}
+
+main-content .filters {
+  display: flex;
+  width:97%;
+  margin-top: 1rem;
+  gap: 1rem;
+  
+}
+
+main-content .filter {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.2rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+main-content .active {
+  background-color: black;
+  color: white;
+}
+
+main-content section {
+  margin-top: 1.2rem;
+  overflow: auto;
+}
+
+main-content section title {
+  display: block;
+  font-size: 1.5rem;
+}
+
+main-content .items {
+  width: fit-content;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-around;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  gap: 1rem;
+  padding-right:30px ;
+}
+
+main-content .items .item {
+  display: inline-block;
+  border: 1px solid black;
+  min-width: 260px;
+  width: 30%;
+  height: 65%;
+}
+
+main-content .items .item img {
+  max-width: 100%;
+ height:260px;
+
+ display: block;
+margin-left:auto;
+margin-right: auto;
+object-position:center ;
+}
+
+main-content .items .item .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+main-content .items .item .info {
+  padding: 1rem;
+}
+
+main-content .items .item button {
+  width: 100%;
+  border-radius: none;
+  border:none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+main-content .items .item button:hover{
+  background-color:rgba(0,0,0,0.8)  ;
+}
+main-content .items .item .colors {
+  display: flex;
+  margin: 1rem 0;
+}
+
+main-content .items .item .circle {
+
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow:0px 0px 0px 1px rgba(0,0,0,0.2)  ;
+}
+#end>a{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: inline-block;
+  margin-left:45%;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+@media screen and (max-width:850px) {
+  main-content .items .item{
+    width: 40%;
+  }
+ main>aside>section{
+    display: none;
+  }
+  main>aside{
+    width: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  main main-content{
+    margin-left:35px ;
+    width:100%;
+    padding: 30px;
+    width: calc(100%-45px);
+  }
+  main>aside>a{
+    padding: 2px;
+    margin: 5px;
+    margin-top:20vh;
+    display: block !important;
+  }
+  main>aside>a>img{
+    display: block;
+    cursor: pointer;
+  }
+  main>aside>a:hover{
+box-shadow: 0px 0px 5px 0px gray;
+  }
+  main>.responsive>section{
+    display: block;
+    width: auto;
+    padding: 10px;
+    
+  }
+  main>.responsive{
+    padding-left: 20px;
+    padding-right: 30px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+  }
+ 
+}
+@media screen and (max-width:800px) {
+  
+  nav>.nav-items>a{
+    display: none;
+  }
+  #navbtn{
+  margin-right:10px;
+  padding: 0px;
+    display: block !important;
+    height: 30px;
+    width: 45px;
+    cursor: pointer;
+  }
+  nav .brand{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+ #navbtn:hover{
+    box-shadow: 0px 0px 5px 0px gray;
+      }
+
+  #navbtn>img{
+    height: 100%;
+  }
+
+  .responsivenav{
+    display: block;
+    background-color: rgba(0,0,0,0.85);
+  }
+  .responsivenav .nav-items{
+      display: block;
+    }
+  .responsivenav>.nav-items>a{
+    display: block;
+    margin: 10px;
+    padding: 8px;
+  }
+  .responsivenav>.nav-items>a:hover{
+    background-color: rgba(0,0,0,0.9);
+  }
+  #hi1{
+      display: block;
+      display: flex;
+    }
+    #hi2{
+      display:none;
+    }
+  main-content .items .item{
+    width: 60%;
+  }
+  main-content .filters{
+    display:none;
+  }
+  main-content .filtercategory{
+display: block !important;
+position: relative;
+background-color: rgba(0,0,0,0.9);
+width: 97%;
+color:whitesmoke;
+padding: 15px;
+margin: 1rem;
+margin-left: 0px;
+text-align: center;
+font-weight: 600;
+cursor: pointer;
+  }
+  main-content .filtercategory:hover{
+    background-color: rgba(0,0,0,0.8);
+
+  }
+ main-content .responsivefilter{
+    display:block;
+    background-color: rgba(0,0,0,0.6);
+  }
+}

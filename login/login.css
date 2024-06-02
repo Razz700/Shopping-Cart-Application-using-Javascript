@@ -1,0 +1,130 @@
+
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+a {
+    color: white;
+    text-decoration: none;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100vw;
+  }
+  
+  nav .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  
+  nav .nav-items a {
+    margin: 0 1rem;
+    color:  rgba(255, 255, 255, 0.7);
+  }
+  nav .nav-items a:hover{
+    color: white;
+  }
+  #loginPage{
+    color:  white !important;
+}
+  
+#loginbtn{
+    border: 2px solid rgba(0, 0, 0, 1);
+       color: white;
+       background-color: black;
+       width: 100px;
+       padding: 5px;
+       cursor: pointer;
+   }
+   #loginbtn:hover{
+       background-color:    #2e2f30 ;
+   }
+   #titlep{
+    color: rgba(0, 0, 0, 1);
+font-weight: 400;
+font-size: 25px;
+text-align: left;
+padding: 0px;
+margin-top: 10px;
+
+}
+form>input{
+    min-width: 150px;
+    width: 70%;
+    border:  1px solid black;
+    border-radius: 0px;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+    
+}
+form>input::placeholder{
+    color: black;
+    opacity: 1;
+}
+form>button,#titlep{
+    padding: 5px;
+    margin:10px;
+}
+P{
+    margin: 10px;
+}
+@media screen and (max-width:800px) {
+        nav>.nav-items>a{
+          display: none;
+        }
+        #navbtn{
+        margin-right:10px;
+        padding: 0px;
+          display: block !important;
+          height: 30px;
+          width: 45px;
+          cursor: pointer;
+        }
+        nav .brand{
+          width: 100%;
+          display: flex;
+         justify-content: space-between;
+         align-items: center;
+        }
+       #navbtn:hover{
+          box-shadow: 0px 0px 5px 0px gray;
+            }
+      
+        #navbtn>img{
+          height: 100%;
+        }
+      
+        .responsivenav{
+          display: block;
+          background-color: rgba(0,0,0,0.85);
+        }
+        .responsivenav>.nav-items>a{
+          display: block;
+          margin: 10px;
+          padding: 8px;
+        }
+        .responsivenav>.nav-items>a:hover{
+          background-color: rgba(0,0,0,0.9);
+        }
+    
+}
+
