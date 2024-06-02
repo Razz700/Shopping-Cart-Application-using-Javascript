@@ -86,6 +86,9 @@ confirmPassword.addEventListener('input',()=>{
 if (a==true && b==true && email.value!="" && password.value!="" && fname.value!="" && lname.value!="" && confirmPassword.value!="" && password.value==confirmPassword.value) {
     error.textContent="";
     success.innerHTML=`All good to go!`; 
+}else{
+    error.textContent="Please make sure password and confirm password are equal!";
+    success.innerHTML=``;  
 }
 });
 
